@@ -4,7 +4,7 @@ let g:colors_name = "black"
 set background=dark
 hi clear
 if exists("syntax_on")
-  syntax reset
+	syntax reset
 endif
 " }}}
 " Palette {{{
@@ -70,9 +70,14 @@ hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=Blue guibg=Yellow
 " hi link Debug		Special
 " }}}
 " Startify {{{
-hi StartifyFile	term=bold 		ctermfg=lightblue 		
-hi StartifyNumber ctermfg=yellow
-hi StartifyBracket ctermfg=yellow
+hi StartifyBracket ctermfg=240
+hi StartifyFile    ctermfg=147
+hi StartifyFooter  ctermfg=240
+hi StartifyHeader  ctermfg=114
+hi StartifyNumber  ctermfg=215
+hi StartifyPath    ctermfg=245
+hi StartifySlash   ctermfg=240
+hi StartifySpecial ctermfg=240
 " }}}
 " call s:HL('Normal', s:red, s:black)
 hi NonText ctermfg=black
