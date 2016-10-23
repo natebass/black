@@ -36,7 +36,7 @@ hi Comment	term=bold		ctermfg=DarkCyan		guifg=#80a0ff
 hi Constant	term=underline	ctermfg=lightgreen		guifg=Magenta
 hi Special	term=bold		ctermfg=white	guifg=Red
 hi Identifier term=underline	cterm=bold			ctermfg=Cyan guifg=#40ffff
-hi Statement term=bold		ctermfg=blue gui=bold	guifg=#aa4444
+hi Statement term=bold		ctermfg=lightblue gui=bold	guifg=#aa4444
 hi PreProc	term=underline	ctermfg=LightBlue	guifg=#ff80ff
 hi Type	term=underline		ctermfg=white	guifg=#60ff60 gui=bold
 hi Function	term=bold		ctermfg=White guifg=White
@@ -44,7 +44,7 @@ hi Repeat	term=underline	ctermfg=White		guifg=white
 hi Operator				ctermfg=white			guifg=Red
 hi Ignore				ctermfg=black		guifg=bg
 hi Error	term=reverse ctermbg=Red ctermfg=White guibg=Red guifg=White
-hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=Blue guibg=Yellow
+hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=lightblue guibg=Yellow
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
 " hi link String	Constant
@@ -71,16 +71,18 @@ hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=Blue guibg=Yellow
 " }}}
 " Startify {{{
 hi StartifyBracket ctermfg=240
-hi StartifyFile    ctermfg=147
+hi StartifyFile    ctermfg=white
 hi StartifyFooter  ctermfg=240
-hi StartifyHeader  ctermfg=114
-hi StartifyNumber  ctermfg=215
-hi StartifyPath    ctermfg=245
-hi StartifySlash   ctermfg=240
+hi StartifyHeader  term=underline ctermfg=white
+hi StartifyNumber  ctermfg=240
+hi StartifyPath    ctermfg=lightblue
+hi StartifySlash   ctermfg=lightblue
 hi StartifySpecial ctermfg=240
+
 " }}}
 " call s:HL('Normal', s:red, s:black)
 hi NonText ctermfg=black
+hi NetrwDir ctermfg=lightblue
 
 " Footer {{{
 " vim:foldmethod=marker:foldlevel=0
