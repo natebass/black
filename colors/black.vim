@@ -7,3 +7,4 @@ if exists("syntax_on")
   syntax reset
 endif
 hi Normal		guifg=white			guibg=black		ctermfg=white			ctermbg=black
+hi StartifyNumber ctermfg=yellow
