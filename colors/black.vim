@@ -44,7 +44,7 @@ hi Repeat	term=underline	ctermfg=White		guifg=white
 hi Operator				ctermfg=white			guifg=Red
 hi Ignore				ctermfg=black		guifg=bg
 hi Error	term=reverse ctermbg=Red ctermfg=White guibg=Red guifg=White
-hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=lightblue guibg=Yellow
+hi Todo	term=standout ctermfg=Yellow guifg=yellow 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
 " hi link String	Constant
@@ -71,19 +71,19 @@ hi Todo	term=standout ctermbg=Yellow ctermfg=Black guifg=lightblue guibg=Yellow
 " }}}
 " Startify {{{
 hi StartifyBracket ctermfg=240
-hi StartifyFile    ctermfg=white
+hi StartifyFile    ctermfg=white 		guifg=#ffffff
 hi StartifyFooter  ctermfg=240
 hi StartifyHeader  term=underline ctermfg=white
 hi StartifyNumber  ctermfg=240
-hi StartifyPath    ctermfg=lightblue
-hi StartifySlash   ctermfg=lightblue
+hi StartifyPath    ctermfg=lightblue 		guifg=#0000EE
+hi StartifySlash   ctermfg=lightblue 		guifg=#0000EE
 hi StartifySpecial ctermfg=240
-
 " }}}
 " call s:HL('Normal', s:red, s:black)
-hi NonText ctermfg=black
-hi NetrwDir ctermfg=lightblue
+hi NonText ctermfg=black guifg=#000000 
+hi NetrwDir ctermfg=lightblue guifg=#0000EE
+hi Folded ctermbg=black guibg=#000000
 
 " Footer {{{
-" vim:foldmethod=marker:foldlevel=0
+" vim:foldmethod=marker:foldlevel=1
 " }}}
