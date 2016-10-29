@@ -83,6 +83,8 @@ hi StartifySpecial ctermfg=240
 hi NonText ctermfg=black guifg=#000000 
 hi NetrwDir ctermfg=lightblue guifg=#0000EE
 hi Folded ctermbg=black guibg=#000000
+hi CursorLine   cterm=NONE ctermbg=236 ctermfg=white guibg=darkred guifg=white
+
 
 " Footer {{{
 " vim:foldmethod=marker:foldlevel=1
