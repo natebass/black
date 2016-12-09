@@ -1,6 +1,5 @@
-" Maintainer:	Nate Bass <nwb3455@gmail.com>
-" Init {{{
 let g:colors_name = "black"
+" Init {{{
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -79,13 +78,19 @@ hi StartifyPath    ctermfg=lightblue 		guifg=#0000EE
 hi StartifySlash   ctermfg=lightblue 		guifg=#0000EE
 hi StartifySpecial ctermfg=240
 " }}}
+" General {{{
 " call s:HL('Normal', s:red, s:black)
 hi NonText ctermfg=black guifg=#000000 
 hi NetrwDir ctermfg=lightblue guifg=#0000EE
 hi Folded ctermbg=black guibg=#000000
 hi CursorLine   cterm=NONE ctermbg=236 ctermfg=white guibg=darkred guifg=white
+hi LineNr ctermfg=black
+hi CursorLineNr ctermfg=black
 
-
+" }}}
+" Java {{{
+syn keyword javaExternal native package syn region foldImports start=/\(^\s*\n^import\)\@<= .\+;/ end=+^\s*$+ transparent fold keepend 
+"}}}
 " Footer {{{
-" vim:foldmethod=marker:foldlevel=1
+" vim:foldmethod=marker:foldlevel=0:ft=vim
 " }}}
