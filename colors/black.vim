@@ -1,3 +1,4 @@
+
 let g:colors_name = "black"
 " Init {{{
 set background=dark
@@ -87,6 +88,13 @@ hi CursorLine   cterm=NONE ctermbg=236 ctermfg=white guibg=darkred guifg=white
 hi LineNr ctermfg=black
 hi CursorLineNr ctermfg=black
 
+" }}}
+" JavaScript {{{
+hi jsonNoise ctermfg=black
+hi jsonBraces ctermfg=black
+hi jsonKeywordMatch ctermfg=black
+hi javaScriptBraces ctermfg=black
+hi javaScriptParens ctermfg=black
 " }}}
 " Java {{{
 syn keyword javaExternal native package syn region foldImports start=/\(^\s*\n^import\)\@<= .\+;/ end=+^\s*$+ transparent fold keepend 
